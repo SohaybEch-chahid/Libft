@@ -1,0 +1,41 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: sech-cha <YOUR_1337_EMAIL>                 +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/10/14 12:40:20 by sech-cha          #+#    #+#             */
+/*   Updated: 2026/10/14 13:45:35 by sech-cha         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "libft.h"
+
+char	*ft_strjoin(char const *s1, char const *s2)
+{
+	char	*join;
+	int		total_len;
+
+	total_len = ft_strlen(s1) + ft_strlen(s2);
+	join = malloc(total_len + 1);
+	if (!join)
+		return (NULL);
+	ft_strlcpy(join, s1, ft_strlen(s1) + 1);
+	ft_strlcpy(join + ft_strlen(s1), s2, ft_strlen(s2) + 1);
+	return (join);
+}
+/*
+#include "libft.h"
+#include <stdio.h>
+
+int	main(void)
+{
+	char	*result;
+
+	result = ft_strjoin("Hello ", "World!");
+	printf("Result: %s\n", result);
+	free(result);
+	return (0);
+}
+*/

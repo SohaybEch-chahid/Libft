@@ -12,7 +12,7 @@
 
 //#include <stdio.h>
 
-int isdigit(int c) {
+int ft_isdigit(int c) {
   if (c >= 48 && c <= 57)
     return 1;
   return 0;
@@ -22,7 +22,7 @@ int isdigit(int c) {
 /*
 int main()
 {
-  int x = isdigit(380);
+  int x = ft_isdigit(380);
   printf("%d\n", x);
   return 0;
 }
