@@ -6,36 +6,24 @@
 /*   By: sech-cha <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 14:43:19 by sech-cha          #+#    #+#             */
-/*   Updated: 2026/10/13 14:43:20 by sech-cha         ###   ########.fr       */
+/*   Updated: 2026/10/14 23:31:33 by sech-cha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strchr(const char *s, int c) {
-  int i;
-
-  i = 0;
-  while (s[i]) {
-    if (s[i] == (char )c)
-      return ((char *)(s + i));
-    i++;
-  }
-  if (s[i] == (char )c)
-    return ((char *)(s + i));
-
-  return (NULL);
-}
-
-/*
-#include <stdio.h>
-int main(void)
+char	*strchr(const char *s, int c)
 {
-    char str[] = "Hello World";
+	int	i;
 
-    printf("%s\n", ft_strchr(str, 'W'));
-    printf("%s\n", ft_strchr(str, 'l'));
-    printf("%s\n", ft_strchr(str, 'z'));
-    return (0);
+	i = 0;
+	while (s[i])
+	{
+		if (s[i] == (char)c)
+			return ((char *)(s + i));
+		i++;
+	}
+	if (s[i] == (char)c)
+		return ((char *)(s + i));
+	return (NULL);
 }
-*/
