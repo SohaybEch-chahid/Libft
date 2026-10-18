@@ -6,7 +6,7 @@
 /*   By: sech-cha <YOUR_1337_EMAIL>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/18 16:45:45 by sech-cha          #+#    #+#             */
-/*   Updated: 2026/10/18 19:25:50 by sech-cha         ###   ########.fr       */
+/*   Updated: 2026/10/18 20:08:24 by sech-cha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,32 +14,35 @@
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	t_list			*new_lst;
-	t_list			*current;
-	t_list			*new;
+	t_list	*new_lst;
+	t_list	*current;
+	t_list	*new;
+	void	*content;
 
 	if (!lst || !f || !del)
 		return (NULL);
-  new_lst = NULL;
-  current = lst;
+	new_lst = NULL;
+	current = lst;
 	while (current)
 	{
-		new = ft_lstnew(f(current->content));
-    if (!new)
-    {
-      del(f(current -> content));
-      ft_lstclear(&new, del);
-      return (NULL);
-    }
+		content = f(current->content);
+		new = ft_lstnew(content);
+		if (!new)
+		{
+			del(content);
+			ft_lstclear(&new_lst, del);
+			return (NULL);
+		}
 		ft_lstadd_back(&new_lst, new);
-	  current = current->next;
+		current = current->next;
 	}
 	return (new_lst);
 }
 
+/*
 void	*ft_addone(void *content)
 {
-  int	*new_value;
+	int	*new_value;
 
 	new_value = malloc(sizeof(int));
 	if (!new_value)
@@ -92,3 +95,4 @@ int	main(void)
 	printf("NULL\n");
 	return (0);
 }
+*/
