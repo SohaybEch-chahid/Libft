@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sech-cha <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: sech-cha <YOUR_1337_EMAIL>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/13 18:29:47 by sech-cha          #+#    #+#             */
-/*   Updated: 2026/10/13 18:29:48 by sech-cha         ###   ########.fr       */
+/*   Created: 2026/10/15 18:28:30 by sech-cha          #+#    #+#             */
+/*   Updated: 2026/10/15 18:29:03 by sech-cha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,17 +37,18 @@ int	ft_atoi(const char *nptr)
 	}
 	return (result * sign);
 }
-
 /*
 #include <stdio.h>
-int main(void)
+
+int	main(void)
 {
-    printf("%d\n", ft_atoi("42"));
-    printf("%d\n", ft_atoi("-42"));
-    printf("%d\n", ft_atoi("+123"));
-    printf("%d\n", ft_atoi("   456"));
-    printf("%d\n", ft_atoi("42abc"));
-    printf("%d\n", ft_atoi("abc42"));
-    return (0);
+	printf("%d\n", ft_atoi("42"));
+	printf("%d\n", ft_atoi("-42"));
+	printf("%d\n", ft_atoi("+123"));
+	printf("%d\n", ft_atoi("   456"));
+	printf("%d\n", ft_atoi("42abc"));
+	printf("%d\n", ft_atoi("-9223372036854775809"));
+	printf("%d\n", atoi("-9223372036854775809"));
+	return (0);
 }
 */
