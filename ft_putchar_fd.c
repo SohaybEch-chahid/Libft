@@ -6,13 +6,12 @@
 /*   By: sech-cha <YOUR_1337_EMAIL>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/17 14:32:19 by sech-cha          #+#    #+#             */
-/*   Updated: 2026/10/17 16:02:10 by sech-cha         ###   ########.fr       */
+/*   Updated: 2026/10/19 12:38:04 by sech-cha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
 #include "libft.h"
-#include <>
 
 void ft_putchar_fd(char c, int fd) {
   write (fd, &c, 1);

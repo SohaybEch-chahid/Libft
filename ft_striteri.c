@@ -6,7 +6,7 @@
 /*   By: sech-cha <YOUR_1337_EMAIL>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/15 22:37:12 by sech-cha          #+#    #+#             */
-/*   Updated: 2026/10/15 23:31:29 by sech-cha         ###   ########.fr       */
+/*   Updated: 2026/10/19 12:39:01 by sech-cha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
 	unsigned int	i;
 
-	if (!s || !ft_putchar_fdf)
+	if (!s || !f)
 		return ;
 	i = 0;
 	while (s[i])

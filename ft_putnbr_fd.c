@@ -6,12 +6,11 @@
 /*   By: sech-cha <YOUR_1337_EMAIL>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/17 15:51:13 by sech-cha          #+#    #+#             */
-/*   Updated: 2026/10/17 17:22:36 by sech-cha         ###   ########.fr       */
+/*   Updated: 2026/10/19 12:40:15 by sech-cha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <unistd.h>
 
 void	ft_putnbr_fd(int n, int fd)
 {
