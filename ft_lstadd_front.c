@@ -3,34 +3,38 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sech-cha <YOUR_1337_EMAIL>                 +#+  +:+       +#+        */
+/*   By: sech-cha <sech-cha@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/17 17:22:08 by sech-cha          #+#    #+#             */
-/*   Updated: 2026/10/17 18:19:17 by sech-cha         ###   ########.fr       */
+/*   Created: 2026/10/19 15:07:26 by sech-cha          #+#    #+#             */
+/*   Updated: 2026/10/19 15:07:28 by sech-cha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_lstadd_front(t_list **lst, t_list *new) {
-  if (!new)
-    return ;
-  new -> next = *lst;
-  *lst = new;
+void	ft_lstadd_front(t_list **lst, t_list *new)
+{
+	if (!new)
+		return ;
+	new->next = *lst;
+	*lst = new;
 }
 /*
 #include <stdio.h>
-int main(void)
+
+int	main(void)
 {
   t_list *head;
   t_list *node;
-  int i = 2;
-  int j = 3;
+	int	i;
+	int	j;
 
+  i = 2;
+  j = 3;
   head = ft_lstnew(&i);
   node = ft_lstnew(&j);
   ft_lstadd_front(&head, node);
   printf ("%d    %d", *(int *)head->content, *(int *)head->next->content);
-  return 0;
+  return (0);
 }
 */

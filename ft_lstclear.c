@@ -3,21 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstclear.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sech-cha <YOUR_1337_EMAIL>                 +#+  +:+       +#+        */
+/*   By: sech-cha <sech-cha@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/18 15:13:42 by sech-cha          #+#    #+#             */
-/*   Updated: 2026/10/18 15:55:17 by sech-cha         ###   ########.fr       */
+/*   Created: 2026/10/19 15:08:12 by sech-cha          #+#    #+#             */
+/*   Updated: 2026/10/19 15:08:14 by sech-cha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-/*
-void	ft_delnode(void *content)
-{
-	free(content);
-}
-*/
 
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
@@ -38,6 +31,13 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 	}
 	*lst = NULL;
 }
+
+/*
+void	ft_delnode(void *content)
+{
+	free(content);
+}
+*/
 
 /*
 #include <stdio.h>

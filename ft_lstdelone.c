@@ -3,21 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstdelone.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sech-cha <YOUR_1337_EMAIL>                 +#+  +:+       +#+        */
+/*   By: sech-cha <sech-cha@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/18 00:59:54 by sech-cha          #+#    #+#             */
-/*   Updated: 2026/10/18 01:43:48 by sech-cha         ###   ########.fr       */
+/*   Created: 2026/10/19 15:09:51 by sech-cha          #+#    #+#             */
+/*   Updated: 2026/10/19 15:10:27 by sech-cha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-/*
-void	ft_delnode(void *content)
-{
-	free(content);
-}
-*/
 
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
@@ -26,6 +19,14 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *))
 	del(lst->content);
 	free(lst);
 }
+
+/*
+void	ft_delnode(void *content)
+{
+	free(content);
+}
+*/
+
 /*
 #include <stdio.h>
 

@@ -3,24 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sech-cha <YOUR_1337_EMAIL>                 +#+  +:+       +#+        */
+/*   By: sech-cha <sech-cha@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/15 17:21:50 by sech-cha          #+#    #+#             */
-/*   Updated: 2026/10/15 22:34:49 by sech-cha         ###   ########.fr       */
+/*   Created: 2026/10/19 15:41:52 by sech-cha          #+#    #+#             */
+/*   Updated: 2026/10/19 15:42:58 by sech-cha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-
-// test mu funct
-/*
-static char	ft_change(unsigned int i, char c)
-{
-	printf("index : %u    char : %c\n", i, c);
-	return (c + 1);
-}
-*/
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
@@ -45,6 +35,11 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 }
 
 /*
+static char	ft_change(unsigned int i, char c)
+{
+	printf("index : %u    char : %c\n", i, c);
+	return (c + 1);
+}
 int	main(void)
 {
 	char		*res;

@@ -3,23 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sech-cha <YOUR_1337_EMAIL>                 +#+  +:+       +#+        */
+/*   By: sech-cha <sech-cha@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/15 22:37:12 by sech-cha          #+#    #+#             */
-/*   Updated: 2026/10/19 12:39:01 by sech-cha         ###   ########.fr       */
+/*   Created: 2026/10/19 15:37:23 by sech-cha          #+#    #+#             */
+/*   Updated: 2026/10/19 15:37:25 by sech-cha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-/*
-static void	ft_change(unsigned int i, char *c)
-{
-	(void)i;
-	if (*c >= 'a' && *c <= 'z')
-		*c -= 32;
-}
-*/
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
@@ -36,6 +27,12 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 }
 
 /*
+static void	ft_change(unsigned int i, char *c)
+{
+	(void)i;
+	if (*c >= 'a' && *c <= 'z')
+		*c -= 32;
+}
 #include "libft.h"
 #include <stdio.h>
 

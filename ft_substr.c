@@ -3,14 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sech-cha <YOUR_1337_EMAIL>                 +#+  +:+       +#+        */
+/*   By: sech-cha <sech-cha@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/14 10:00:22 by sech-cha          #+#    #+#             */
-/*   Updated: 2026/10/14 12:39:50 by sech-cha         ###   ########.fr       */
+/*   Created: 2026/10/19 15:47:53 by sech-cha          #+#    #+#             */
+/*   Updated: 2026/10/19 15:48:09 by sech-cha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-// start is an index
 
 #include "libft.h"
 
@@ -40,7 +38,6 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	return (res);
 }
 /*
-#include "libft.h"
 #include <stdio.h>
 
 int	main(void)

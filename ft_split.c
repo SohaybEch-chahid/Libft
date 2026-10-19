@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sech-cha <YOUR_1337_EMAIL>                 +#+  +:+       +#+        */
+/*   By: sech-cha <sech-cha@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/14 23:10:13 by sech-cha          #+#    #+#             */
-/*   Updated: 2026/10/15 13:02:22 by sech-cha         ###   ########.fr       */
+/*   Created: 2026/10/19 15:33:29 by sech-cha          #+#    #+#             */
+/*   Updated: 2026/10/19 15:33:31 by sech-cha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,7 +80,6 @@ char	**ft_split(char const *s, char c)
 /*
 #include "libft.h"
 #include <stdio.h>
-#include <stdlib.h>
 
 int	main(void)
 {

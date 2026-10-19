@@ -3,24 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sech-cha <YOUR_1337_EMAIL>                 +#+  +:+       +#+        */
+/*   By: sech-cha <sech-cha@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/18 15:51:34 by sech-cha          #+#    #+#             */
-/*   Updated: 2026/10/18 16:44:39 by sech-cha         ###   ########.fr       */
+/*   Created: 2026/10/19 15:11:49 by sech-cha          #+#    #+#             */
+/*   Updated: 2026/10/19 15:11:51 by sech-cha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-/*
-void	ft_addone(void *content)
-{
-	int	*x;
-
-	x = (int *)content;
-	(*x)++;
-}
-*/
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
@@ -35,6 +25,16 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 		current = current->next;
 	}
 }
+
+/*
+void	ft_addone(void *content)
+{
+	int	*x;
+
+	x = (int *)content;
+	(*x)++;
+}
+*/
 
 /*
 #include <stdio.h>

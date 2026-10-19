@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sech-cha <YOUR_1337_EMAIL>                 +#+  +:+       +#+        */
+/*   By: sech-cha <sech-cha@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/17 14:34:44 by sech-cha          #+#    #+#             */
-/*   Updated: 2026/10/19 12:40:20 by sech-cha         ###   ########.fr       */
+/*   Created: 2026/10/19 15:31:10 by sech-cha          #+#    #+#             */
+/*   Updated: 2026/10/19 15:33:08 by sech-cha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	ft_putstr_fd(char *s, int fd)
 {
 	int	i;
 
+	if (!s)
+		return ;
 	i = 0;
 	while (s[i])
 	{
@@ -31,9 +33,7 @@ void	ft_putstr_fd(char *s, int fd)
 		return ;
 	write(fd, s, ft_strlen(s));
 }
-*/
 
-#include "libft.h"
 
 int	main(void)
 {
@@ -41,3 +41,5 @@ int	main(void)
 	ft_putstr_fd("This is an error message.\n", 2);
 	return (0);
 }
+
+*/
