@@ -6,7 +6,7 @@
 /*   By: sech-cha <sech-cha@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 15:41:52 by sech-cha          #+#    #+#             */
-/*   Updated: 2026/10/19 15:42:58 by sech-cha         ###   ########.fr       */
+/*   Updated: 2026/10/23 18:16:33 by sech-cha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	char			*res;
-	int				len;
+	unsigned int	len;
 	unsigned int	i;
 
 	if (!s || !f)

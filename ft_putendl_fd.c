@@ -6,7 +6,7 @@
 /*   By: sech-cha <sech-cha@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 15:28:25 by sech-cha          #+#    #+#             */
-/*   Updated: 2026/10/19 15:28:27 by sech-cha         ###   ########.fr       */
+/*   Updated: 2026/10/23 17:49:11 by sech-cha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
-	if (!s)
+	if (fd < 0 || !s)
 		return ;
 	ft_putstr_fd(s, fd);
-	write(fd, "\n", 1);
+	ft_putchar_fd('\n', fd);
 }
 
 /*

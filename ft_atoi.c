@@ -6,38 +6,40 @@
 /*   By: sech-cha <sech-cha@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 12:56:31 by sech-cha          #+#    #+#             */
-/*   Updated: 2026/10/19 13:57:04 by sech-cha         ###   ########.fr       */
+/*   Updated: 2026/10/23 16:03:17 by sech-cha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(const char *nptr)
+int	ft_atoi(const char *str)
 {
-	int	i;
-	int	result;
-	int	sign;
+	int		sign;
+	long	res;
 
-	result = 0;
-	i = 0;
 	sign = 1;
-	while (nptr[i] == ' ' || (nptr[i] >= 9 && nptr[i] <= 13))
-		i++;
-	if (nptr[i] == '-')
+	res = 0;
+	while (*str == 32 || (*str >= 9 && *str <= 13))
+		str++;
+	if (*str == '+' || *str == '-')
 	{
-		sign = -1;
-		i++;
+		if (*str == '-')
+			sign = -1;
+		str++;
 	}
-	else if (nptr[i] == '+')
-		i++;
-	while (ft_isdigit(nptr[i]))
+	while (*str >= '0' && *str <= '9')
 	{
-		result = result * 10 + (nptr[i] - '0');
-		i++;
+		if (res > (9223372036854775807 - (*str - '0')) / 10)
+		{
+			if (sign == 1)
+				return (-1);
+			else if (sign == -1)
+				return (0);
+		}
+		res = res * 10 + (*str++ - '0');
 	}
-	return (result * sign);
+	return ((int)(res * sign));
 }
-/*
 #include <stdio.h>
 
 int	main(void)
@@ -47,8 +49,7 @@ int	main(void)
 	printf("%d\n", ft_atoi("+123"));
 	printf("%d\n", ft_atoi("   456"));
 	printf("%d\n", ft_atoi("42abc"));
-	printf("%d\n", ft_atoi("-9223372036854775809"));
-	printf("%d\n", atoi("-9223372036854775809"));
+	printf("%d\n", ft_atoi("92233720368547758"));
+	printf("%d\n", atoi("92233720368547758"));
 	return (0);
 }
-*/

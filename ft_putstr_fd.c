@@ -6,7 +6,7 @@
 /*   By: sech-cha <sech-cha@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 15:31:10 by sech-cha          #+#    #+#             */
-/*   Updated: 2026/10/19 15:33:08 by sech-cha         ###   ########.fr       */
+/*   Updated: 2026/10/23 18:01:01 by sech-cha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_putstr_fd(char *s, int fd)
 {
 	int	i;
 
-	if (!s)
+	if (fd < 0 || !s)
 		return ;
 	i = 0;
 	while (s[i])

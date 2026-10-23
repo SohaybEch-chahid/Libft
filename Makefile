@@ -6,7 +6,7 @@
 #    By: sech-cha <sech-cha@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/10/19 11:38:29 by sech-cha          #+#    #+#              #
-#    Updated: 2026/10/19 14:55:09 by sech-cha         ###   ########.fr        #
+#    Updated: 2026/10/22 22:31:59 by sech-cha         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,11 +31,7 @@ SRC		= ft_atoi.c ft_isascii.c ft_memcpy.c ft_strlcat.c ft_strrchr.c \
 OBJ = $(SRC:.c=.o)
 
 
-test: $(NAME) main.c
-	$(CC) $(CFLAGS) main.c -L. -lft -o test
-	./test
-
-%.o : %.c
+%.o : %.c libft.h
 	$(CC) $(CFLAGS) -c $< -o $@
 
 all : $(NAME)
@@ -50,4 +46,4 @@ fclean : clean
 	$(RM) $(NAME)
 re : fclean all
 
-.PHONY : all clean fclean re
+.PHONY : clean

@@ -6,7 +6,7 @@
 /*   By: sech-cha <sech-cha@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 15:45:51 by sech-cha          #+#    #+#             */
-/*   Updated: 2026/10/19 15:45:53 by sech-cha         ###   ########.fr       */
+/*   Updated: 2026/10/23 18:27:38 by sech-cha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 	if (!set || !s1)
 		return (NULL);
+	if (set == NULL)
+		return (ft_strdup(s1));
 	i = 0;
 	j = ft_strlen(s1) - 1;
 	while (s1[i] && ft_strchr(set, s1[i]))
