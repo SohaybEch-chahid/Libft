@@ -6,7 +6,7 @@
 /*   By: sech-cha <sech-cha@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 12:56:31 by sech-cha          #+#    #+#             */
-/*   Updated: 2026/10/23 16:03:17 by sech-cha         ###   ########.fr       */
+/*   Updated: 2026/10/23 21:10:53 by sech-cha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,8 @@ int	ft_atoi(const char *str)
 	}
 	return ((int)(res * sign));
 }
+
+/*
 #include <stdio.h>
 
 int	main(void)
@@ -53,3 +55,4 @@ int	main(void)
 	printf("%d\n", atoi("92233720368547758"));
 	return (0);
 }
+*/
