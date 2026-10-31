@@ -6,7 +6,7 @@
 /*   By: sech-cha <sech-cha@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 15:47:53 by sech-cha          #+#    #+#             */
-/*   Updated: 2026/10/23 18:30:15 by sech-cha         ###   ########.fr       */
+/*   Updated: 2026/10/27 10:20:13 by sech-cha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,16 +39,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	res[i] = '\0';
 	return (res);
 }
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	char	*res;
-
-	res = ft_substr("Hello World", 6, 10);
-	printf("Result: %s\n", res);
-	free(res);
-	return (0);
-}
-*/

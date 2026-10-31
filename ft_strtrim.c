@@ -6,7 +6,7 @@
 /*   By: sech-cha <sech-cha@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 15:45:51 by sech-cha          #+#    #+#             */
-/*   Updated: 2026/10/23 18:27:38 by sech-cha         ###   ########.fr       */
+/*   Updated: 2026/10/27 10:20:05 by sech-cha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,17 +39,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	ft_strlcpy(trim, s1 + i, len + 1);
 	return (trim);
 }
-/*
-#include "libft.h"
-#include <stdio.h>
-
-int	main(void)
-{
-	char	*result;
-
-	result = ft_strtrim("", "x ");
-	printf("Result: %s\n", result);
-	free(result);
-	return (0);
-}
-*/

@@ -6,7 +6,7 @@
 /*   By: sech-cha <sech-cha@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 15:06:18 by sech-cha          #+#    #+#             */
-/*   Updated: 2026/10/19 15:06:21 by sech-cha         ###   ########.fr       */
+/*   Updated: 2026/10/27 10:12:56 by sech-cha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,18 +72,3 @@ char	*ft_itoa(int n)
 	res = ft_insert_nb(res, n, str_len);
 	return (res);
 }
-/*
-#include <stdio.h>
-#include <stdlib.h>
-
-
-int	main(void)
-{
-	printf("%s\n", ft_itoa(42));
-	printf("%s\n", ft_itoa(-42));
-	printf("%s\n", ft_itoa(0));
-	printf("%s\n", ft_itoa(1234));
-	printf("%s\n", ft_itoa(-2147483648));
-	return (0);
-}
-*/

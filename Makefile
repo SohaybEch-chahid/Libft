@@ -5,8 +5,8 @@
 #                                                     +:+ +:+         +:+      #
 #    By: sech-cha <sech-cha@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2026/10/19 11:38:29 by sech-cha          #+#    #+#              #
-#    Updated: 2026/10/22 22:31:59 by sech-cha         ###   ########.fr        #
+#    Created: 2026/10/27 11:02:13 by sech-cha          #+#    #+#              #
+#    Updated: 2026/10/28 15:58:22 by sech-cha         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,7 +29,6 @@ SRC		= ft_atoi.c ft_isascii.c ft_memcpy.c ft_strlcat.c ft_strrchr.c \
 	ft_lstclear.c ft_lstiter.c ft_lstmap.c
 
 OBJ = $(SRC:.c=.o)
-
 
 %.o : %.c libft.h
 	$(CC) $(CFLAGS) -c $< -o $@

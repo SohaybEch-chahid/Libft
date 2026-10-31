@@ -6,7 +6,7 @@
 /*   By: sech-cha <sech-cha@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 15:13:47 by sech-cha          #+#    #+#             */
-/*   Updated: 2026/10/19 15:15:55 by sech-cha         ###   ########.fr       */
+/*   Updated: 2026/10/27 10:15:21 by sech-cha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,18 +23,3 @@ t_list	*ft_lstnew(void *content)
 	node->next = NULL;
 	return (node);
 }
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	t_list	*head;
-	int		x;
-
-  x = 7;
-	head = ft_lstnew(&x);
-  // int *ptr = head->content;
-	printf("%d\n", *(int *)head->content);
-	return (0);
-}
-*/

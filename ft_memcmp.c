@@ -6,7 +6,7 @@
 /*   By: sech-cha <sech-cha@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 15:19:20 by sech-cha          #+#    #+#             */
-/*   Updated: 2026/10/20 19:10:30 by sech-cha         ###   ########.fr       */
+/*   Updated: 2026/10/27 10:15:52 by sech-cha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,19 +27,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 		return (0);
 	return (ptr1[i] - ptr2[i]);
 }
-
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	char	s1[] = "Hello";
-	char	s2[] = "Hello";
-	char	s3[] = "Hellp";
-
-	printf("%d\n", ft_memcmp(s1, s2, 5));
-	printf("%d\n", ft_memcmp(s1, s3, 5));
-	printf("%d\n", ft_memcmp(s1, s3, 4));
-	return (0);
-}
-*/

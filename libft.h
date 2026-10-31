@@ -6,7 +6,7 @@
 /*   By: sech-cha <sech-cha@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 11:39:08 by sech-cha          #+#    #+#             */
-/*   Updated: 2026/10/19 12:40:08 by sech-cha         ###   ########.fr       */
+/*   Updated: 2026/10/27 10:21:03 by sech-cha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,14 +17,12 @@
 # include <stdlib.h>
 # include <unistd.h>
 
-/* Struct for linked list nodes */
 typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;
 }					t_list;
 
-/* ---------------------------- CHAR FUNCTIONS ---------------------------- */
 int					ft_isalpha(int c);
 int					ft_isdigit(int c);
 int					ft_isalnum(int c);
@@ -33,7 +31,6 @@ int					ft_isprint(int c);
 int					ft_toupper(int c);
 int					ft_tolower(int c);
 
-/* ---------------------------- STRING FUNCTIONS -------------------------- */
 size_t				ft_strlen(const char *s);
 size_t				ft_strlcpy(char *dst, const char *src, size_t size);
 size_t				ft_strlcat(char *dst, const char *src, size_t size);
@@ -50,7 +47,6 @@ char				**ft_split(char const *s, char c);
 char				*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void				ft_striteri(char *s, void (*f)(unsigned int, char *));
 
-/* ---------------------------- MEMORY FUNCTIONS -------------------------- */
 void				*ft_memset(void *s, int c, size_t n);
 void				ft_bzero(void *s, size_t n);
 void				*ft_memcpy(void *dest, const void *src, size_t n);
@@ -59,7 +55,6 @@ void				*ft_memchr(const void *s, int c, size_t n);
 int					ft_memcmp(const void *s1, const void *s2, size_t n);
 void				*ft_calloc(size_t nmemb, size_t size);
 
-/* ---------------------------- CONVERSION & I/O -------------------------- */
 int					ft_atoi(const char *nptr);
 char				*ft_itoa(int n);
 void				ft_putchar_fd(char c, int fd);
@@ -67,7 +62,6 @@ void				ft_putstr_fd(char *s, int fd);
 void				ft_putendl_fd(char *s, int fd);
 void				ft_putnbr_fd(int n, int fd);
 
-/* ---------------------------- BONUS FUNCTIONS --------------------------- */
 t_list				*ft_lstnew(void *content);
 void				ft_lstadd_front(t_list **lst, t_list *new);
 unsigned int		ft_lstsize(t_list *lst);

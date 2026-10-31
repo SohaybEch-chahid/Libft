@@ -6,7 +6,7 @@
 /*   By: sech-cha <sech-cha@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 15:40:50 by sech-cha          #+#    #+#             */
-/*   Updated: 2026/10/19 15:40:52 by sech-cha         ###   ########.fr       */
+/*   Updated: 2026/10/27 10:19:11 by sech-cha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,15 +30,3 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	}
 	return (len);
 }
-/*
-#include <stdio.h>
-
-int	main(void) {
-  char dst[5];
-  const char src[] = "BpsY";
-  size_t res = ft_strlcpy(dst, src, 3);
-  printf("Destination: %s\n", dst);
-  printf ("%zu\n", res);
-  return (0);
-}
-*/

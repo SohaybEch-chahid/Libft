@@ -6,7 +6,7 @@
 /*   By: sech-cha <sech-cha@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 15:41:52 by sech-cha          #+#    #+#             */
-/*   Updated: 2026/10/23 18:16:33 by sech-cha         ###   ########.fr       */
+/*   Updated: 2026/10/27 10:19:28 by sech-cha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,20 +33,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	res[i] = '\0';
 	return (res);
 }
-
-/*
-static char	ft_change(unsigned int i, char c)
-{
-	printf("index : %u    char : %c\n", i, c);
-	return (c + 1);
-}
-int	main(void)
-{
-	char		*res;
-	char const	s[] = "12345";
-
-	res = ft_strmapi(s, ft_change);
-	printf("%s", res);
-	return (0);
-}
-*/

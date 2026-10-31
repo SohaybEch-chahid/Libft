@@ -6,7 +6,7 @@
 /*   By: sech-cha <sech-cha@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 15:34:48 by sech-cha          #+#    #+#             */
-/*   Updated: 2026/10/19 15:34:51 by sech-cha         ###   ########.fr       */
+/*   Updated: 2026/10/27 10:18:43 by sech-cha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,19 +31,3 @@ char	*ft_strdup(const char *s)
 	ptr[i] = '\0';
 	return (ptr);
 }
-
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	char	*copy;
-
-	copy = ft_strdup("Hello World");
-	if (!copy)
-		return (1);
-	printf("%s\n", copy);
-	free(copy);
-	return (0);
-}
-*/

@@ -6,7 +6,7 @@
 /*   By: sech-cha <sech-cha@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 15:25:24 by sech-cha          #+#    #+#             */
-/*   Updated: 2026/10/19 15:25:26 by sech-cha         ###   ########.fr       */
+/*   Updated: 2026/10/27 10:16:23 by sech-cha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,16 +26,3 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	return (s);
 }
-
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	char	str[6] = "hello";
-
-	ft_memset(str, 'X', 3);
-	printf("%s\n", str);
-	return (0);
-}
-*/

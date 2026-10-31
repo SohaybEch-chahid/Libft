@@ -6,7 +6,7 @@
 /*   By: sech-cha <sech-cha@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 15:45:07 by sech-cha          #+#    #+#             */
-/*   Updated: 2026/10/23 18:25:16 by sech-cha         ###   ########.fr       */
+/*   Updated: 2026/10/27 10:19:47 by sech-cha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,18 +33,3 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (NULL);
 }
-
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	char	*big;
-
-	big = "Hello World";
-	printf("%s\n", ft_strnstr(big, "World", 11));
-	printf("%s\n", ft_strnstr(big, "World", 5));
-	printf("%s\n", ft_strnstr(big, "", 11));
-	return (0);
-}
-*/

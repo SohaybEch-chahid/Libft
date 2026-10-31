@@ -6,7 +6,7 @@
 /*   By: sech-cha <sech-cha@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 15:21:37 by sech-cha          #+#    #+#             */
-/*   Updated: 2026/10/19 15:21:40 by sech-cha         ###   ########.fr       */
+/*   Updated: 2026/10/27 10:16:00 by sech-cha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,17 +28,3 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	char	src[] = "Hello";
-	char	dest[6];
-
-	ft_memcpy(dest, src, 6);
-	printf("Source:      %s\n", src);
-	printf("Destination: %s\n", dest);
-	return (0);
-}
-*/

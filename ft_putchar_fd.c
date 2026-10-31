@@ -6,7 +6,7 @@
 /*   By: sech-cha <sech-cha@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 15:28:00 by sech-cha          #+#    #+#             */
-/*   Updated: 2026/10/23 17:28:59 by sech-cha         ###   ########.fr       */
+/*   Updated: 2026/10/27 10:16:35 by sech-cha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,3 @@ void	ft_putchar_fd(char c, int fd)
 		return ;
 	write(fd, &c, 1);
 }
-
-/*
-int	main(void)
-{
-  ft_putchar_fd ('a', -300);
-  perror("errno");
-}
-*/

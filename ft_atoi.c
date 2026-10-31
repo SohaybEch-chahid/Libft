@@ -6,7 +6,7 @@
 /*   By: sech-cha <sech-cha@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 12:56:31 by sech-cha          #+#    #+#             */
-/*   Updated: 2026/10/23 21:10:53 by sech-cha         ###   ########.fr       */
+/*   Updated: 2026/10/30 23:28:28 by sech-cha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,19 +40,3 @@ int	ft_atoi(const char *str)
 	}
 	return ((int)(res * sign));
 }
-
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	printf("%d\n", ft_atoi("42"));
-	printf("%d\n", ft_atoi("-42"));
-	printf("%d\n", ft_atoi("+123"));
-	printf("%d\n", ft_atoi("   456"));
-	printf("%d\n", ft_atoi("42abc"));
-	printf("%d\n", ft_atoi("92233720368547758"));
-	printf("%d\n", atoi("92233720368547758"));
-	return (0);
-}
-*/

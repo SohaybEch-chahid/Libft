@@ -6,7 +6,7 @@
 /*   By: sech-cha <sech-cha@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 15:31:10 by sech-cha          #+#    #+#             */
-/*   Updated: 2026/10/23 18:01:01 by sech-cha         ###   ########.fr       */
+/*   Updated: 2026/10/27 10:17:25 by sech-cha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,21 +25,3 @@ void	ft_putstr_fd(char *s, int fd)
 		i++;
 	}
 }
-
-/*
-void	ft_putstr_fd(char *s, int fd)
-{
-	if (!s)
-		return ;
-	write(fd, s, ft_strlen(s));
-}
-
-
-int	main(void)
-{
-	ft_putstr_fd("Hello 1337!\n", 1);
-	ft_putstr_fd("This is an error message.\n", 2);
-	return (0);
-}
-
-*/

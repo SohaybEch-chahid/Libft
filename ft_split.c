@@ -6,7 +6,7 @@
 /*   By: sech-cha <sech-cha@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 15:33:29 by sech-cha          #+#    #+#             */
-/*   Updated: 2026/10/19 15:33:31 by sech-cha         ###   ########.fr       */
+/*   Updated: 2026/10/27 11:05:40 by sech-cha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,9 +54,10 @@ char	**ft_split(char const *s, char c)
 {
 	char	**res;
 	int		count_words;
-	int		word_len;
 	int		i;
 
+	if (!s)
+		return (NULL);
 	count_words = ft_word_counter(s, c);
 	res = malloc(sizeof(char *) * (count_words + 1));
 	if (!res)
@@ -66,37 +67,13 @@ char	**ft_split(char const *s, char c)
 	{
 		while (*s && (*s == c))
 			s++;
-		word_len = ft_word_len(s, c);
-		res[i] = malloc(word_len + 1);
+		res[i] = malloc(ft_word_len(s, c) + 1);
 		if (!res[i])
 			return (ft_free(res, i));
-		ft_strlcpy(res[i], s, word_len + 1);
-		s += word_len;
+		ft_strlcpy(res[i], s, ft_word_len(s, c) + 1);
+		s += ft_word_len(s, c);
 		i++;
 	}
 	res[i] = NULL;
 	return (res);
 }
-/*
-#include "libft.h"
-#include <stdio.h>
-
-int	main(void)
-{
-	char	**res;
-	int		i;
-
-	res = ft_split("hello world 42", ' ');
-	if (!res)
-		return (1);
-	i = 0;
-	while (res[i])
-	{
-		printf("%s\n", res[i]);
-		free(res[i]);
-		i++;
-	}
-	free(res);
-	return (0);
-}
-*/

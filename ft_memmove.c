@@ -6,7 +6,7 @@
 /*   By: sech-cha <sech-cha@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 15:22:08 by sech-cha          #+#    #+#             */
-/*   Updated: 2026/10/19 15:22:09 by sech-cha         ###   ########.fr       */
+/*   Updated: 2026/10/27 10:16:08 by sech-cha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,19 +40,3 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	char	str1[] = "ABCDE";
-	char	str2[] = "ABCDE";
-
-	ft_memmove(str1 + 1, str1, 4);
-	// memmove(str2 + 1, str2, 4);
-	printf("My function: %s\n", str1);
-	printf("Original:    %s\n", str2);
-	return (0);
-}
-*/

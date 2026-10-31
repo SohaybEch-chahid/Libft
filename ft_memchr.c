@@ -6,7 +6,7 @@
 /*   By: sech-cha <sech-cha@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 15:15:42 by sech-cha          #+#    #+#             */
-/*   Updated: 2026/10/23 16:47:24 by sech-cha         ###   ########.fr       */
+/*   Updated: 2026/10/27 10:15:44 by sech-cha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,14 +25,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	char	str[] = "Hello World";
-
-	printf("%s\n", (char *)ft_memchr(str, 'W', 11));
-	return (0);
-}
-*/

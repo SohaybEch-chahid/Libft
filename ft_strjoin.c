@@ -6,7 +6,7 @@
 /*   By: sech-cha <sech-cha@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 15:38:11 by sech-cha          #+#    #+#             */
-/*   Updated: 2026/10/23 18:08:10 by sech-cha         ###   ########.fr       */
+/*   Updated: 2026/10/27 10:19:00 by sech-cha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,17 +27,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	ft_strlcpy(join + ft_strlen(s1), s2, ft_strlen(s2) + 1);
 	return (join);
 }
-/*
-#include "libft.h"
-#include <stdio.h>
-
-int	main(void)
-{
-	char	*result;
-
-	result = ft_strjoin("Hello ", "World!");
-	printf("Result: %s\n", result);
-	free(result);
-	return (0);
-}
-*/

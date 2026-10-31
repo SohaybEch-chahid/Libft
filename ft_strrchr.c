@@ -6,7 +6,7 @@
 /*   By: sech-cha <sech-cha@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 15:45:26 by sech-cha          #+#    #+#             */
-/*   Updated: 2026/10/19 15:45:27 by sech-cha         ###   ########.fr       */
+/*   Updated: 2026/10/27 10:19:55 by sech-cha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,18 +27,3 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (NULL);
 }
-
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	char	str[] = "hello";
-
-	printf("%s\n", ft_strrchr(str, 'l'));
-	printf("%s\n", ft_strrchr(str, 'o'));
-	printf("%s\n", ft_strrchr(str, 'z'));
-	printf("%s\n", ft_strrchr(str, 'h'));
-	return (0);
-}
-*/
